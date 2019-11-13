@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的祖国</title>
+<link href="css/style.css" rel="stylesheet" >
+<style type="text/css">
+	.dv11{
+		width:498px;
+		height:398px;
+		border:1px solid #138DF3;
+		background-color: aquamarine;
+		position: absolute;
+		float: left;
+		border-radius:20px;
+		top: 0px;
+		left: 0px;
+	}
+	.dv11 p{
+		color: #E21425;
+		text-indent: 2em;
+		font-family: "楷体";
+		font-size:20px;
+	}
+	.dv11 img{
+		float:right;
+		width: 200px;
+		height: 170px;
+	}
+	.dv12{
+		width:498px;
+		height:398px;
+		border:1px solid #138DF3;
+		position: absolute;
+		background-color: aquamarine;
+		border-radius:20px;
+		top: 0px;
+		left:500px;
+	}
+	.dv13{
+		width:498px;
+		height:398px;
+		border-radius:20px;
+		background-color: aquamarine;
+		border:1px solid #138DF3;
+		position:absolute;
+		top:400px;
+		left:0px;
+	}
+	.dv14{
+		width:498px;
+		height:398px;
+		border:1px solid #138DF3;
+		position:absolute;
+		background-color: aquamarine;
+		border-radius:20px;
+		top:400px;
+		left:500px;
+	}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<img src="image/十九大02.gif" alt="新时代图" />
+</div>
+<div class="nav">
+	<ul id="nav">
+    <li><a href="index.html">首     页</a></li>
+       <li><a href="web02.html">雄飞中国</a>
+        <ul>
+            <li><a href="#">大飞机</a></li>
+            <li><a href="#">国产航母</a></li>
+			<li><a href="#">人工智能</a></li>
+			<li><a href="#">中共十九大</a></li>
+        </ul>
+    </li>
+    <li><a href="web03.html">改革开放</a>
+        <ul>
+            <li><a href="#">十一届三中全会</a></li>
+            <li><a href="#">改革开放</a></li>
+            <li><a href="#">一国两制</a></li>
+        </ul>
+    </li>
+    <li><a href="web04.html">新中国</a>
+        <ul>
+            <li><a href="#">新中国成立</a></li>
+            <li><a href="#">中共八大</a></li>
+			<li><a href="#">文化大革命</a></li>
+			<li><a href="#">两弹一星</a></li>
+        </ul>
+    </li>
+    <li><a href="web05.html">峥嵘岁月</a>
+        <ul>
+            <li><a href="#">党的成立</a></li>
+            <li><a href="#">土地革命</a></li>
+			<li><a href="#">抗日战争</a></li>
+			<li><a href="#">解放战争</a></li>
+        </ul>
+    </li>
+</ul>
+</div>
+<div class="section" style="height:800px; position:relative; ">
+	<div class="dv11" align="left">
+		dv11
+	</div>
+	<div class="dv12">
+<div style="margin:15px 15px;">
+<h2 align="center">站内公告</h2>
+<div style="border:solid 1px gray;background:url(images/main_bg.gif);">
+<ul id="ulContent" style="overflow:hidden;height:200px;width:250px;padding-left:15px;list-style:url(image/title1.gif);"> 
+<div id="liPanel">
+<li><a href="#">1919年5月4日五四运动</a></li>
+<li><a href="#">1921年7月23中共一大召开</a></li>
+<li><a href="#">1924年国共合作</a></li>
+<li><a href="#">1925年-1927年北伐战争</a></li>
+<li><a href="#">1927年国民革命失败，武昌起义</a></li>
+<li><a href="#">1931年9月18日，九一八事变</a></li>
+<li><a href="#">1931年-1935年红军长征</a></li>
+<li><a href="#">1936年西安事变</a></li>
+<li><a href="#">1937年卢沟桥事变</a></li>
+<li><a href="#">1937年7月-1945年8月抗日战争爆发</a></li>
+<li><a href="#">1946年-1949年国共内战</a></li>
+<li><a href="#">1949年新中国成立</a></li>
+<li><a href="#">1956年中共八大</a></li>
+<li><a href="#">1966年-1976年文化大革命</a></li>
+<li><a href="#">1978年党的十一届三中全会</a></li>
+</div>
+<div id="liAlternative"></div>
+</ul>
+</div>
+</div>
+<script language="JavaScript" type="text/javascript">
+var ulCont = document.getElementById("ulContent");
+var liPnl = document.getElementById("liPanel");
+var liAltnv = document.getElementById("liAlternative");
+liAltnv.innerHTML=liPnl.innerHTML;
+function charList()
+{
+if(liAltnv.offsetHeight - ulCont.scrollTop <= 0) //如果ul的scrollTop大于li列表的高度
+
+
+ulCont.scrollTop -= liPnl.offsetHeight; //ul的scrollTop减去li列表的高度
+else
+ulCont.scrollTop++; //ul元素的scrollTop递增
+}
+var charListIntvl = setInterval(charList, 100); //设置时间间隔事件，每100毫秒触发一次charList()事件
+ulCont.onmouseover = function() {clearInterval
+(charListIntvl);}; //鼠标进入的事件
+ulCont.onmouseout = function() {charListIntvl = 
+setInterval(charList,100);}; //鼠标离开
+的事件
+</script>
+	</div>
+	<div class="dv13">
+		dv13
+	</div>
+	<div class="dv14">
+		dv14
+	</div>
+</div>
+<div class="footer">
+		友情链接： <a href="index.html">首页</a> | 一带一路 | 改革开放 | 新时代 | <a href="mailto:ngjw@foxmail.com">关于我们</a><br/>
+		                          @版权所有：        纪 伟  所有              严禁盗版         盗版必究
+</div>
+</body>
+</html>

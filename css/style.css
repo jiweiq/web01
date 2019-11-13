@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+	.header{
+		width:1000px;
+		height:300px;
+		margin:0 auto;
+		background-color:#168AEC;
+		position: relative;
+		border:1px solid #13EA86;
+		
+	}
+	.nav{
+		width:1000px;
+		height:40px;
+		margin:0 auto;
+		padding-left:0px;
+		background-color:#fff;
+		border:1px solid #13EA86;
+	}
+	.section{
+		width:996px;
+		height:1200px;
+		margin:0 auto;
+		border:1px solid #13EA86;
+		position: relative;
+		background-color:#1B15F1;
+		padding:2px 2px;
+		position:relative;
+	}
+	
+	.footer{
+		width:750px;
+		height:50px;
+		margin:0 auto;
+		padding-left:250px;
+		background-color:#1BDA73;
+		border:1px solid #13EA86;
+	}
+	a{
+		text-decoration: none;
+	}
+	ul#nav,ul#nav ul{
+    	margin: 0 auto;
+    	text-align:left;
+    	padding: 0;
+    	list-style: none;
+    	background:#fff;
+    	z-index:99;
+	}
+	ul#nav {
+    	width:1200px;              /*�������������*/
+    	display:block;
+    	height:40px;
+    	clear:both;
+	}
+	ul#nav li {
+    	position: relative;
+    	z-index:999;
+    	float:left;
+	}
+	ul#nav ul li{
+    	display:block;
+	}
+	ul#nav ul {
+   		width:200px;              /*�����˵��Ŀ���*/
+    	height:auto;
+    	position: absolute;
+    	text-align:left;
+    	left: 0px;
+   		display: none;
+    	border:solid 1px #697210;
+	}
+	ul#nav li.over a,ul#nav li:hover a{
+    	border-color:#96F;
+    	background:#FFC;
+    	font-weight:bold;
+    	color:#006;
+	}
+	ul#nav li.over ul a,ul#nav li:hover ul a{
+   		background:#fff;
+    	font-weight:normal;
+    	color:#777;
+	}
+	ul#nav li.over ul a:hover,ul#nav li:hover ul a:hover{
+    	background:#fff;
+    	font-weight:normal;
+    	color: #006;
+    	background: #ffc;
+    	border-color:#E2144A;
+    	font-weight:bold;
+	}
+
+	ul#nav a {
+    	font-size:20px;                      /*�����������С*/
+    	line-height:17px;
+    	display: block;
+    	padding:2px 0 0 50px;
+    	width:148px;                         /*һ������������*/
+    	color: #777;
+    	height:30px;
+    	background: #fff;
+    	border-left:solid 1px #00f;
+    	border-top:solid 1px #00f;
+    	border-right:solid 1px #00f;
+    	border-bottom:solid 5px #00f;
+	}
+	ul#nav ul li{
+    	width:110px;
+    	border:0;
+	}
+
+	ul#nav ul a {
+	 	padding: 2px 0px 2px  10px;
+	 	border:0;
+	 	width:180px;     /*һ���˵������ӵĿ���*/
+ 	}
+	ul#nav li:hover ul,ul#nav  li.over ul { 
+		display: block;            /*�����Ŀ�*/
+	}
+
